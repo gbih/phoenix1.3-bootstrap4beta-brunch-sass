@@ -1,11 +1,10 @@
 # Running Phoenix 1.3 with Bootstrap v4.0.0-beta and Sass
 
-Install sass-brunch to enable sass compilation with the standard Phoenix package
+Install sass-brunch to enable sass compilation with the default Phoenix 1.3 package.
 
-Note: popper.js replaces tether.js in BS v4.0.0-beta
+Note: popper.js replaces tether.js in Bootstrap v4.0.0-beta
 
 ```
-
 mix phx.new sasstest --no-ecto
 cd sasstest/assets
 
@@ -14,15 +13,12 @@ npm install bootstrap@4.0.0-beta --save
 npm install sass-brunch --save-dev
 npm install popper.js --save
 
-
 ```
-
 
 
 Then in brunch-config.js, enable the sass plugin
 
 ```
-
 exports.config = {
   files: {
     javascripts: {
@@ -76,7 +72,6 @@ exports.config = {
   }
 };
 
-
 ```
 
 
@@ -129,7 +124,6 @@ Inside the assets/css folder, change app.css to app.scss and edit as:
 @import "carousel";
 @import "utilities";
 
-
 ```
 
 
@@ -137,7 +131,6 @@ Create _custom.scss in same folder as app.scss.
 Place your custom sass here, such as
 
 ```
-
 $white:  gray !default;
 
 ```
